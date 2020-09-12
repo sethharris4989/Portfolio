@@ -4,38 +4,15 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-// You can delete this file if you're not using it
-
-// import React from 'react';
-// const React = require("react")
-// const Layout = require("./src/components/layout").default
-// const Shape = require("./src/components/shape").default
-
-// exports.wrapPageElement = ({ element, props }) => {
-//   // props provide same data to Layout as Page element will get
-//   // including location, data, etc - you don't need to pass it
-//   return (
-//     <>
-//       <Layout {...props}>{element}</Layout>
-//       <Shape />
-
-//     </>
-//   )
-// }
-
-
 const React = require("react")
 const Layout = require("./src/components/layout").default
 const Scene = require("./src/components/scene").default
 
 exports.wrapPageElement = ({ element, props }) => {
-  // props provide same data to Layout as Page element will get
-  // including location, data, etc - you don't need to pass it
   return (
     <>
       <Layout {...props}>
         {element}
-
       </Layout>
       <Scene />
     </>

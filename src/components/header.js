@@ -4,13 +4,24 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div>
-      {/* <h1>
-        <Link to="/">
-          Seth Harris
+    <ul>
+      <li>
+        <Link to="/resume">
+          Resume
         </Link>
-      </h1> */}
-    </div>
+      </li>
+      <li>
+        <Link to="/page-2">
+          Projects
+        </Link>
+      </li>
+      <li>
+        <Link to="/page-2">
+          Contact
+        </Link>
+      </li>
+    </ul>
+
   </header>
 )
 

@@ -11,7 +11,6 @@ const IndexPage = () => (
       <div className="title">
         <h1>Seth Harris</h1>
         <p>Web Developer | Knoxville, TN</p>
-        <Link to="/page-2/">Go to page 2</Link>
       </div>
     </section>
   </>
