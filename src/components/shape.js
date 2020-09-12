@@ -2,7 +2,6 @@ import * as THREE from "three";
 import gsap from "gsap";
 
 
-
 export default function Shape() {
   const WIDTH = window.innerWidth;
   const HEIGHT = window.innerHeight;
