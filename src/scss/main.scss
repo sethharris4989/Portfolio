@@ -3,6 +3,7 @@
 
 $black: rgb(20, 20, 20);
 $blackOp: rgba(28, 28, 28, .7);
+$darkGray: rgba(28, 28, 28, 1);
 $gray: rgb(38, 38, 38);
 $grayOp: rgba(38, 38, 38, .7);
 
@@ -74,7 +75,7 @@ footer {
   width: 100vw;
   z-index: 9;
   padding: 15px;
-  background: transparent;
+  background:#141414;
   height: 55px;
   ul {
     display: flex;
@@ -100,7 +101,7 @@ header {
   width: 100vw;
   z-index: 9;
   padding: 15px;
-  background: $gray;
+  background: #141414;
   display: flex;
   justify-content: flex-end;
   height: 75px;
@@ -122,29 +123,30 @@ header {
         text-transform: uppercase;
         font-size: 1.1rem;
         font-weight: bold;
-        letter-spacing: 1px;
+        letter-spacing: 1.2px;
       }
     }
   }
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
+}
+
+.headline {
+  color: transparent;
+  -webkit-text-stroke-width: .075rem;
+  -webkit-text-stroke-color: #fff;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  text-align: center;
 }
 
 .resume-section {
   position: relative;
   padding: 80px 0px;
-  .headline {
-    color: transparent;
-    -webkit-text-stroke-width: .075rem;
-    -webkit-text-stroke-color: #fff;
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 1.4px;
-    text-align: center;
-  }
   h2 {
     color: transparent;
     -webkit-text-stroke-width: .075rem;
@@ -175,5 +177,145 @@ header {
       padding: 20px;
       margin-bottom: 20px;
     }
+  }
+}
+
+
+.projects-section {
+  position: relative;
+  padding: 80px 0px;
+  .slick-slider {
+    width: 400px;
+    height: 100%;
+  }
+  .project-list {
+    position: relative;
+    list-style: none;
+    h2 {
+      color: transparent;
+      -webkit-text-stroke-width: .075rem;
+      -webkit-text-stroke-color: #fff;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 10px;
+    }
+    li {
+      position: relative;
+      margin-bottom: 20px;
+      &:nth-child(even) {
+        .box {
+          .box-left {
+            order: 3;
+          }
+        }
+      }
+      .box {
+        display: flex;
+        background: $blackOp;
+        backdrop-filter: blur(5px);
+        padding: 30px 20px;
+        margin-bottom: 20px;
+        min-height: 300px;
+        .box-left {
+          padding: 0px 10px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .box-left-bottom {
+            position: relative;
+            display: flex;
+          }
+        }
+        .box-right {
+          padding: 0px 10px;
+        }
+      }
+    }
+  }
+}
+
+.slick-slide {
+  position: relative;
+  div {
+    height: 100%;
+  }
+}
+
+.slider-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.slick-list,
+.slick-track,
+.slick-slide {
+  height: 100% !important;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+.btn {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 12px 40px;
+  display: flex;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: .2s;
+  &:hover {
+    background: white;
+    color: $darkGray;
+  }
+}
+
+
+.single-project-section {
+  position: relative;
+  padding: 80px 0px;
+  h2 {
+    color: transparent;
+    -webkit-text-stroke-width: .075rem;
+    -webkit-text-stroke-color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+  }
+  .box {
+    display: flex;
+    background: $blackOp;
+    backdrop-filter: blur(5px);
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    min-height: 300px;
+    .box-left {
+      padding: 0px 10px;
+    }
+    .box-right {
+      padding: 0px 10px;
+    }
+  }
+  .site-link {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    .inline-btn {
+      margin-left: 20px;
+    }
+  }
+  .slick-slider {
+    width: 400px;
+    height: 300px;
   }
 }

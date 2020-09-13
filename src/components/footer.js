@@ -8,12 +8,12 @@ const Footer = ({ siteTitle }) => (
   <footer>
     <ul>
       <li>
-        <a href="https://github.com/sethharris4989/portfolio" target="_blank">
+        <a href="https://github.com/sethharris4989/portfolio" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faGithub} />
         </a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/seth-harris-40787154/" target="_blank">
+        <a href="https://www.linkedin.com/in/seth-harris-40787154/" target="_blank" rel="noreferrer">
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
       </li>

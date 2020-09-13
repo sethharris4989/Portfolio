@@ -16,8 +16,8 @@ class Scene extends React.Component {
     this.renderer.setSize(this.mount.offsetWidth, this.mount.offsetHeight)
     this.mount.appendChild(this.renderer.domElement)
 
-    const geometry = new THREE.DodecahedronBufferGeometry();
-    const material = new THREE.MeshPhongMaterial({ color: 0x141414, shininess: 30, shading: THREE.FlatShading, })
+    const geometry = new THREE.DodecahedronBufferGeometry(0, 1);
+    const material = new THREE.MeshPhongMaterial({ color: 0x141414, shininess: 10, shading: THREE.FlatShading, })
     const cube = new THREE.Mesh(geometry, material)
 
     scene.add(cube)
@@ -29,8 +29,6 @@ class Scene extends React.Component {
     scene.add(ambientLight);
     scene.add(light);
     scene.add(light1);
-
-
 
     light.position.set(-400, -100, 0);
     light1.position.set(400, 200, 0);
@@ -68,13 +66,11 @@ class Scene extends React.Component {
         onUpdate: ren.render(scene, cam),
       });
 
-      // gsap.to(cube.position, {
-      //   x: -x,
-      //   y: -z,
-      //   z: 1.7,
-      //   ease: "power2.out",
-      //   onUpdate: ren.render(scene, cam),
-      // })
+      gsap.to(cube.position, {
+        z: -z,
+        ease: "power2.out",
+        onUpdate: ren.render(scene, cam),
+      })
 
 
       light.position.set(z / 20, x / 10, 0);

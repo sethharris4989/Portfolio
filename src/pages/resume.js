@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import SEO from "../components/seo"
 
 const ResumePage = () => (
@@ -28,7 +27,6 @@ const ResumePage = () => (
             </div>
           </div>
           <div className="right-col">
-
             <div className="box">
               <h2>SKILLS</h2>
               <ul>
@@ -47,13 +45,13 @@ const ResumePage = () => (
               <h2>AWARDS</h2>
               <ul>
                 <li>
-                  <a href="https://www.biltmore.com/" target="_blank">2020 Addy Gold Award: Best of Website - biltmore.com</a>
+                  <a href="https://www.biltmore.com/" target="_blank" rel="noreferrer">2020 Addy Gold Award: Best of Website - biltmore.com</a>
                 </li>
                 <li>
-                  <a href="https://scribblesc.com/" target="_blank">2020 Addy Silver Award - scribblesc.com</a>
+                  <a href="https://scribblesc.com/" target="_blank" rel="noreferrer">2020 Addy Silver Award - scribblesc.com</a>
                 </li>
                 <li>
-                  <a href="https://www.aafknoxville.com/wp-content/uploads/2020/03/KNS_Winners_Ad_FORPRINT.pdf" target="_blank">2020 ADDY Award Winner List</a>
+                  <a href="https://www.aafknoxville.com/wp-content/uploads/2020/03/KNS_Winners_Ad_FORPRINT.pdf" target="_blank" rel="noreferrer">2020 ADDY Award Winner List</a>
                 </li>
               </ul>
             </div>

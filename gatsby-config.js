@@ -5,6 +5,14 @@ module.exports = {
     author: `Seth Harris`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `ybci46gea794`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `GCzrRAnU0wtUl_AT3FIntg4c0K7VNR0XzfYhZbwbOMw`,
+      },
+    },
     'gatsby-plugin-sass',
     `gatsby-plugin-react-helmet`,
     {

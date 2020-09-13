@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </li>
       <li>
-        <Link to="/page-2">
+        <Link to="/projects">
           Projects
         </Link>
       </li>
