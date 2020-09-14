@@ -37,12 +37,14 @@ const ContactPage = () => {
       <h1 className="headline">Contact</h1>
       <div className="container">
         <form onSubmit={handleOnSubmit}>
-          <input type="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" />
-          <input type="text" name="name" placeholder="Enter your name" required="required" />
-          <input type="text" name="message" placeholder="Your Message" required="required" />
-          <button type="submit" className="btn" disabled={serverState.submitting}>
-            Submit
-          </button>
+          <input type="text" name="name" placeholder="Name" required="required" />
+          <input type="email" name="email" aria-describedby="emailHelp" placeholder="Email Address" />
+
+          <textarea type="text" name="message" placeholder="Your Message" required="required" />
+          <div className="submit">
+            <button type="submit" className="btn" disabled={serverState.submitting}>Submit</button>
+          </div>
+
           {serverState.status && (
             <p className={!serverState.status.ok ? "errorMsg" : ""}>
               {serverState.status.msg}

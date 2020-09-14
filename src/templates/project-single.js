@@ -34,7 +34,7 @@ class SingleProjectTemplate extends React.Component {
               </Slider>
             </div>
             <div className="box-right">
-              <h2>About This Project</h2>
+              <h2>Details</h2>
               <p>{post.introduction.introduction}</p>
               <div className="site-link">
                 <Link className="btn" target="_blank" to={post.siteLink}>View Site</Link>
