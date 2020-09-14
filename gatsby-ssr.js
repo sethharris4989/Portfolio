@@ -4,8 +4,6 @@
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
 
-
-
 const React = require("react")
 const Layout = require("./src/components/layout").default
 
