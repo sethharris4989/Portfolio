@@ -17,7 +17,7 @@ class Scene extends React.Component {
     this.mount.appendChild(this.renderer.domElement)
 
     const geometry = new THREE.DodecahedronBufferGeometry(0, 1);
-    const material = new THREE.MeshPhongMaterial({ color: 0x141414, shininess: 10, shading: THREE.FlatShading, })
+    const material = new THREE.MeshPhongMaterial({ color: 0x141414, shininess: 4, shading: THREE.FlatShading, })
     const cube = new THREE.Mesh(geometry, material)
 
     scene.add(cube)
