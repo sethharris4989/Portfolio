@@ -8,7 +8,7 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons"
 const Header = ({ siteTitle }) => (
   <header>
     <Link class="title-link" to="/">
-      <svg class="logo" viewBox="0 0 242 237" >
+      <svg width="70px" class="logo" viewBox="0 0 242 237" >
         <title>Page 1</title>
         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g id="Group" transform="translate(2.000000, 2.000000)" fill="#141414" opacity="0.89999998" stroke-linejoin="bevel" stroke-width="4">

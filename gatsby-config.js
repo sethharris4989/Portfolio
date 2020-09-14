@@ -5,6 +5,7 @@ module.exports = {
     author: `Seth Harris`,
   },
   plugins: [
+    'gatsby-plugin-loadable-components-ssr',
     {
       resolve: `gatsby-source-contentful`,
       options: {
