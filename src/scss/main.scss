@@ -93,6 +93,7 @@ main {
     z-index: 9;
     justify-content: center;
     align-items: center;
+    margin-top: -75px;
     h1 {
       color: transparent;
       -webkit-text-stroke-width: .075rem;
@@ -100,6 +101,10 @@ main {
       font-size: 9vw;
       text-transform: uppercase;
       letter-spacing: 1.4px;
+      margin-bottom: 0px;
+      @include small {
+        font-size: 3.2rem;
+      }
     }
     p {
       font-size: 20px;
@@ -107,7 +112,13 @@ main {
     }
   }
 }
-
+.logo {
+  width: 63px;
+  margin-top: 6px;
+  @include small {
+    width: 54px;
+  }
+}
 
 header {
   position: fixed;
@@ -133,6 +144,9 @@ header {
     .logo {
       width: 63px;
       margin-top: 4px;
+      @include small {
+        width: 52px;
+      }
     }
   }
   ul {
@@ -185,7 +199,7 @@ header {
   position: relative;
   padding: 80px 0px;
   @include mediumdown {
-    padding: 20px 0px 40px;
+    padding: 20px 0px 100px;
   }
   h2 {
     color: transparent;
@@ -251,7 +265,7 @@ header {
   position: relative;
   padding: 80px 0px;
   @include mediumdown {
-    padding: 20px 0px 40px;
+    padding: 20px 0px 100px;
   }
   .slick-slider {
     width: 420px;
@@ -380,7 +394,7 @@ header {
   position: relative;
   padding: 80px 0px;
   @include mediumdown {
-    padding: 20px 0px 40px;
+    padding: 20px 0px 100px;
   }
   h2 {
     color: transparent;
@@ -450,7 +464,7 @@ header {
   position: relative;
   padding: 80px 0px;
   @include mediumdown {
-    padding: 20px 0px 40px;
+    padding: 20px 0px 100px;
   }
   .container {
     max-width: 900px;
