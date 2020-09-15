@@ -75,7 +75,7 @@ class Scene extends React.Component {
 
       light.position.set(z / 20, x / 10, 0);
 
-    }
+    };
 
 
     const handleDeviceOrientation = ({
@@ -92,16 +92,10 @@ class Scene extends React.Component {
         onUpdate: ren.render(scene, cam),
       });
 
-      gsap.to(cube.position, {
-        z: -x,
-        ease: "power2.out",
-        onUpdate: ren.render(scene, cam),
-      })
-
     };
 
     window.addEventListener("pointermove", handlePointerMove);
-    window.addEventListener("devicemotion", handleDeviceOrientation, true);
+    window.addEventListener("devicemotion", handleDeviceOrientation);
     window.addEventListener('resize', this.onWindowResize.bind(this), false);
     requestAnimationFrame(update);
   }
