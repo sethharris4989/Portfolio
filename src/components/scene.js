@@ -77,7 +77,31 @@ class Scene extends React.Component {
 
     }
 
+
+    const handleDeviceOrientation = ({
+      acceleration,
+      accelerationIncludingGravity,
+    }) => {
+      const { x, y } = accelerationIncludingGravity || acceleration;
+
+      gsap.to(cube.rotation, {
+        x: Math.floor(-y) / 3,
+        y: Math.floor(-x) / 3,
+        duration: 1,
+        ease: "power2.out",
+        onUpdate: ren.render(scene, cam),
+      });
+
+      gsap.to(cube.position, {
+        z: -x,
+        ease: "power2.out",
+        onUpdate: ren.render(scene, cam),
+      })
+
+    };
+
     window.addEventListener("pointermove", handlePointerMove);
+    window.addEventListener("devicemotion", handleDeviceOrientation, true);
     window.addEventListener('resize', this.onWindowResize.bind(this), false);
     requestAnimationFrame(update);
   }
