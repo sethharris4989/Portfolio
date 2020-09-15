@@ -3,7 +3,6 @@ import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import SEO from "../components/seo"
 import Slider from "react-slick";
-import Img from "gatsby-image"
 import BackgroundImage from 'gatsby-background-image'
 import { Link } from "gatsby"
 

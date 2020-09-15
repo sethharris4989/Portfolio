@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
-import Img from 'gatsby-image'
 import BackgroundImage from 'gatsby-background-image'
 import { Link } from "gatsby"
 import Slider from "react-slick";
